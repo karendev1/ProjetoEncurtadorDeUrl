@@ -1,0 +1,55 @@
+$Gray: hsl(0, 0%, 75%);
+$GrayisViolet: hsl(257, 7%, 63%);
+$Cyan: hsl(180, 66%, 49%);
+
+.btn {
+  .btn-radius {
+    color: white;
+    font-weight: bold;
+    background: $Cyan;
+    border-radius: 30px;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+      background: $GrayisViolet;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-top: 5%;
+  .description {
+    width: 50%;
+    h2 {
+      font-size: 3em;
+      margin: 0;
+      padding: 0;
+    }
+    p {
+      margin: 1% 0 8% 0;
+      padding: 0;
+      color: $Gray;
+    }
+  }
+  .image{
+      width: 50%;
+      img{
+          width: 100%;
+          position: relative;
+          left: 17%;
+      }
+  }
+}
+
+.caixa{
+    width: 80%;
+    height: 124px;
+    margin: 0 auto;
+    background: url(../../assets/images/bg-shorten-desktop.svg) no-repeat bottom left, url(../../assets/images/bg-boost-desktop.svg) no-repeat top right;
+    border-radius: 15px;
+    margin-top: 5%;
+}
